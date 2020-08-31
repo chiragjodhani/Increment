@@ -1,0 +1,6 @@
+framework module Pods_Increment {
+  umbrella header "Pods-Increment-umbrella.h"
+
+  export *
+  module * { export * }
+}
