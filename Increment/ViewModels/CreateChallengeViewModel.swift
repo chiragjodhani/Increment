@@ -18,26 +18,39 @@ final class CreateChallengeViewModel: ObservableObject {
         case createChallenge
     }
     private let userService: UserServiceProtocol
+    private let challengeService: ChallengeServiceProtocol
     private var cancellable: [AnyCancellable] = []
     
-    init(userService: UserServiceProtocol = UserService()) {
+    init(userService: UserServiceProtocol = UserService(), challengeService: ChallengeServiceProtocol  = ChallengeService()) {
         self.userService = userService
+        self.challengeService = challengeService
     }
     
     func send(action: Action) {
         switch action {
         case .createChallenge:
-            currentUserId().sink { completion in
+            currentUserId().flatMap { userId -> AnyPublisher<Void, Error> in
+                return self.createChallenge(userId: userId)
+            }.sink { completion in
                 switch completion {
                 case let .failure(error):
                     print(error.localizedDescription)
                 case .finished:
-                    print("Completed")
+                    print("Finished")
                 }
-            } receiveValue: { (userId) in
-                print("Received USerId:- \(userId)")
+            } receiveValue: { (_) in
+                print("Success")
             }.store(in: &cancellable)
         }
+    }
+    
+    private func createChallenge(userId: UserId) -> AnyPublisher<Void, Error> {
+        guard let exercise = exerciseDropDown.text, let startAmount = startAmountDropDown.number, let increase = increaseDropDown.number, let length = lengthDropDown.number else {
+            return Fail(error: NSError()).eraseToAnyPublisher()
+        }
+        
+        let challenge = Challenge(exercise: exercise, startAmount: startAmount, increase: increase, length: length, userId: userId, startDate: Date())
+        return challengeService.create(challenge).eraseToAnyPublisher()
     }
     
     private func currentUserId() -> AnyPublisher<UserId, Error> {
@@ -128,5 +141,21 @@ extension CreateChallengeViewModel {
                 .init(type: .number(rawValue), formatted: "\(rawValue) days")
             }
         }
+    }
+}
+
+extension CreateChallengeViewModel.ChallengePartViewModel {
+    var text: String? {
+        if case let .text(text)  = selectedOption.type {
+            return text
+        }
+        return nil
+    }
+    
+    var number: Int? {
+        if case let .number(number)  = selectedOption.type {
+            return number
+        }
+        return nil
     }
 }

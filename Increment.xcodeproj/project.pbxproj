@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		573FF2388F65275B4C5A7EED /* Pods_Increment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDE5E0854B9C50D79BE822A /* Pods_Increment.framework */; };
 		C207600824FCBB64000FAC0B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C207600724FCBB64000FAC0B /* UserService.swift */; };
+		C207600B24FCF54F000FAC0B /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C207600A24FCF54F000FAC0B /* Challenge.swift */; };
+		C207600D24FCF675000FAC0B /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C207600C24FCF675000FAC0B /* ChallengeService.swift */; };
 		C2562F3624FA569E0077C6D6 /* IncrementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F3524FA569E0077C6D6 /* IncrementApp.swift */; };
 		C2562F3824FA569E0077C6D6 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F3724FA569E0077C6D6 /* LandingView.swift */; };
 		C2562F3A24FA56A00077C6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2562F3924FA56A00077C6D6 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		4FDE5E0854B9C50D79BE822A /* Pods_Increment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Increment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2D124554566CC8C4C31904 /* Pods-Increment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Increment.release.xcconfig"; path = "Target Support Files/Pods-Increment/Pods-Increment.release.xcconfig"; sourceTree = "<group>"; };
 		C207600724FCBB64000FAC0B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		C207600A24FCF54F000FAC0B /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		C207600C24FCF675000FAC0B /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
 		C2562F3224FA569E0077C6D6 /* Increment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2562F3524FA569E0077C6D6 /* IncrementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementApp.swift; sourceTree = "<group>"; };
 		C2562F3724FA569E0077C6D6 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -77,8 +81,17 @@
 			isa = PBXGroup;
 			children = (
 				C207600724FCBB64000FAC0B /* UserService.swift */,
+				C207600C24FCF675000FAC0B /* ChallengeService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		C207600924FCF52C000FAC0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C207600A24FCF54F000FAC0B /* Challenge.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C2562F2924FA569E0077C6D6 = {
@@ -102,6 +115,7 @@
 		C2562F3424FA569E0077C6D6 /* Increment */ = {
 			isa = PBXGroup;
 			children = (
+				C207600924FCF52C000FAC0B /* Models */,
 				C207600624FCBB41000FAC0B /* Service */,
 				C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */,
 				C2562F4F24FA719C0077C6D6 /* ViewModels */,
@@ -262,10 +276,12 @@
 				C2562F3824FA569E0077C6D6 /* LandingView.swift in Sources */,
 				C2562F3624FA569E0077C6D6 /* IncrementApp.swift in Sources */,
 				C2562F4824FA61F50077C6D6 /* Color+Extension.swift in Sources */,
+				C207600B24FCF54F000FAC0B /* Challenge.swift in Sources */,
 				C2562F5124FA71D20077C6D6 /* CreateChallengeViewModel.swift in Sources */,
 				C2562F4E24FA6F5B0077C6D6 /* RemindView.swift in Sources */,
 				C207600824FCBB64000FAC0B /* UserService.swift in Sources */,
 				C2562F4A24FA68540077C6D6 /* CreateView.swift in Sources */,
+				C207600D24FCF675000FAC0B /* ChallengeService.swift in Sources */,
 				C2562F5324FA76470077C6D6 /* DropDownItemProtocol.swift in Sources */,
 				C2562F4C24FA69610077C6D6 /* DropDownView.swift in Sources */,
 			);
