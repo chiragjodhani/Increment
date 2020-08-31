@@ -12,19 +12,14 @@ struct CreateView: View {
     @State var isActive: Bool = false
     
     var dropDownList: some View {
-        ForEach(viewModel.dropdowns.indices, id: \.self) { index in
-            DropDownView(viewModel: $viewModel.dropdowns[index])
+        Group {
+            DropDownView(viewModel: $viewModel.exerciseDropDown)
+            DropDownView(viewModel: $viewModel.startAmountDropDown)
+            DropDownView(viewModel: $viewModel.increaseDropDown)
+            DropDownView(viewModel: $viewModel.lengthDropDown)
         }
     }
-    var actionSheet: ActionSheet {
-        ActionSheet(title: Text("Select"),
-                    buttons: viewModel.displayedOptions.indices.map { index in
-                        let option = viewModel.displayedOptions[index]
-                        return .default(Text(option.formatted)) {
-                            viewModel.send(action: .selectOption(index: index))
-                        }
-                    })
-    }
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -35,11 +30,6 @@ struct CreateView: View {
                 }) {
                     Text("Create").font(.system(size: 24, weight: .medium))
                 }
-            }
-            .actionSheet(isPresented: Binding<Bool>(get: {
-                viewModel.hasSelectedDropdown
-            }, set: { (_) in })) {
-                actionSheet
             }
             .navigationBarTitle("Create")
             .navigationBarBackButtonHidden(true)
