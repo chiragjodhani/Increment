@@ -23,6 +23,7 @@
 		C2562F5124FA71D20077C6D6 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F5024FA71D20077C6D6 /* CreateChallengeViewModel.swift */; };
 		C2562F5324FA76470077C6D6 /* DropDownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F5224FA76470077C6D6 /* DropDownItemProtocol.swift */; };
 		C2562F5524FA8E8F0077C6D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */; };
+		C2BC38AF24FF5FF800B4A8BF /* IncrementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BC38AE24FF5FF800B4A8BF /* IncrementError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		C2562F5024FA71D20077C6D6 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		C2562F5224FA76470077C6D6 /* DropDownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownItemProtocol.swift; sourceTree = "<group>"; };
 		C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C2BC38AE24FF5FF800B4A8BF /* IncrementError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,19 +117,20 @@
 		C2562F3424FA569E0077C6D6 /* Increment */ = {
 			isa = PBXGroup;
 			children = (
-				C207600924FCF52C000FAC0B /* Models */,
-				C207600624FCBB41000FAC0B /* Service */,
-				C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */,
-				C2562F4F24FA719C0077C6D6 /* ViewModels */,
-				C2562F4424FA60290077C6D6 /* Utils */,
-				C2562F3524FA569E0077C6D6 /* IncrementApp.swift */,
-				C2562F3724FA569E0077C6D6 /* LandingView.swift */,
 				C2562F3924FA56A00077C6D6 /* Assets.xcassets */,
-				C2562F3E24FA56A00077C6D6 /* Info.plist */,
-				C2562F3B24FA56A00077C6D6 /* Preview Content */,
 				C2562F4924FA68540077C6D6 /* CreateView.swift */,
 				C2562F4B24FA69610077C6D6 /* DropDownView.swift */,
+				C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */,
+				C2562F3524FA569E0077C6D6 /* IncrementApp.swift */,
+				C2562F3E24FA56A00077C6D6 /* Info.plist */,
+				C2562F3724FA569E0077C6D6 /* LandingView.swift */,
 				C2562F4D24FA6F5B0077C6D6 /* RemindView.swift */,
+				C2BC38AE24FF5FF800B4A8BF /* IncrementError.swift */,
+				C207600924FCF52C000FAC0B /* Models */,
+				C2562F3B24FA56A00077C6D6 /* Preview Content */,
+				C207600624FCBB41000FAC0B /* Service */,
+				C2562F4424FA60290077C6D6 /* Utils */,
+				C2562F4F24FA719C0077C6D6 /* ViewModels */,
 			);
 			path = Increment;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				C207600D24FCF675000FAC0B /* ChallengeService.swift in Sources */,
 				C2562F5324FA76470077C6D6 /* DropDownItemProtocol.swift in Sources */,
 				C2562F4C24FA69610077C6D6 /* DropDownView.swift in Sources */,
+				C2BC38AF24FF5FF800B4A8BF /* IncrementError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
