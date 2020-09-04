@@ -23,6 +23,7 @@
 		C2562F5124FA71D20077C6D6 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F5024FA71D20077C6D6 /* CreateChallengeViewModel.swift */; };
 		C2562F5324FA76470077C6D6 /* DropDownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F5224FA76470077C6D6 /* DropDownItemProtocol.swift */; };
 		C2562F5524FA8E8F0077C6D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */; };
+		C2A323562501FA67009136E3 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A323552501FA67009136E3 /* AuthPublisher.swift */; };
 		C2BC38AF24FF5FF800B4A8BF /* IncrementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BC38AE24FF5FF800B4A8BF /* IncrementError.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		C2562F5024FA71D20077C6D6 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		C2562F5224FA76470077C6D6 /* DropDownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownItemProtocol.swift; sourceTree = "<group>"; };
 		C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C2A323552501FA67009136E3 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
 		C2BC38AE24FF5FF800B4A8BF /* IncrementError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 		C2562F3424FA569E0077C6D6 /* Increment */ = {
 			isa = PBXGroup;
 			children = (
+				C2A323542501FA43009136E3 /* Publisher */,
 				C2562F3924FA56A00077C6D6 /* Assets.xcassets */,
 				C2562F4924FA68540077C6D6 /* CreateView.swift */,
 				C2562F4B24FA69610077C6D6 /* DropDownView.swift */,
@@ -159,6 +162,14 @@
 				C2562F5224FA76470077C6D6 /* DropDownItemProtocol.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C2A323542501FA43009136E3 /* Publisher */ = {
+			isa = PBXGroup;
+			children = (
+				C2A323552501FA67009136E3 /* AuthPublisher.swift */,
+			);
+			path = Publisher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A323562501FA67009136E3 /* AuthPublisher.swift in Sources */,
 				C2562F4624FA603E0077C6D6 /* PrimaryButtonStyle.swift in Sources */,
 				C2562F3824FA569E0077C6D6 /* LandingView.swift in Sources */,
 				C2562F3624FA569E0077C6D6 /* IncrementApp.swift in Sources */,
