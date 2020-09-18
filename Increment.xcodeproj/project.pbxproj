@@ -15,6 +15,7 @@
 		C22DEC36250F2B2B0008DBF4 /* ChallengeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DEC35250F2B2B0008DBF4 /* ChallengeListView.swift */; };
 		C22DEC38250F2B590008DBF4 /* ChallengeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DEC37250F2B590008DBF4 /* ChallengeListViewModel.swift */; };
 		C22DEC3A250F2CA40008DBF4 /* QuerySnapshotPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DEC39250F2CA40008DBF4 /* QuerySnapshotPublisher.swift */; };
+		C2543C132514D48B001275C9 /* ChallengeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2543C122514D48B001275C9 /* ChallengeItemViewModel.swift */; };
 		C2562F3624FA569E0077C6D6 /* IncrementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F3524FA569E0077C6D6 /* IncrementApp.swift */; };
 		C2562F3824FA569E0077C6D6 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F3724FA569E0077C6D6 /* LandingView.swift */; };
 		C2562F3A24FA56A00077C6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2562F3924FA56A00077C6D6 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		C22DEC35250F2B2B0008DBF4 /* ChallengeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListView.swift; sourceTree = "<group>"; };
 		C22DEC37250F2B590008DBF4 /* ChallengeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListViewModel.swift; sourceTree = "<group>"; };
 		C22DEC39250F2CA40008DBF4 /* QuerySnapshotPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuerySnapshotPublisher.swift; sourceTree = "<group>"; };
+		C2543C122514D48B001275C9 /* ChallengeItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeItemViewModel.swift; sourceTree = "<group>"; };
 		C2562F3224FA569E0077C6D6 /* Increment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2562F3524FA569E0077C6D6 /* IncrementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementApp.swift; sourceTree = "<group>"; };
 		C2562F3724FA569E0077C6D6 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				C2562F5024FA71D20077C6D6 /* CreateChallengeViewModel.swift */,
 				C2562F5224FA76470077C6D6 /* DropDownItemProtocol.swift */,
 				C22DEC37250F2B590008DBF4 /* ChallengeListViewModel.swift */,
+				C2543C122514D48B001275C9 /* ChallengeItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				C22DEC3A250F2CA40008DBF4 /* QuerySnapshotPublisher.swift in Sources */,
 				C2562F4A24FA68540077C6D6 /* CreateView.swift in Sources */,
 				C207600D24FCF675000FAC0B /* ChallengeService.swift in Sources */,
+				C2543C132514D48B001275C9 /* ChallengeItemViewModel.swift in Sources */,
 				C22DEC36250F2B2B0008DBF4 /* ChallengeListView.swift in Sources */,
 				C2562F5324FA76470077C6D6 /* DropDownItemProtocol.swift in Sources */,
 				C2562F4C24FA69610077C6D6 /* DropDownView.swift in Sources */,
