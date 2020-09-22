@@ -38,7 +38,18 @@ struct ChallengeListView: View {
                 }
                 Spacer()
             }.padding(10)
-        }.navigationTitle(viewModel.title)
+        }.sheet(isPresented: $viewModel.showingCreateModal){
+            NavigationView {
+                CreateView()
+            }
+        }.navigationBarItems(trailing:
+                                Button(action: {
+                                    viewModel.send(action: .create)
+                                }) {
+                                    Image(systemName: "plus.circle").imageScale(.large)
+                                }
+        )
+        .navigationTitle(viewModel.title)
     }
 }
 

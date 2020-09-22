@@ -129,23 +129,18 @@
 		C2562F3424FA569E0077C6D6 /* Increment */ = {
 			isa = PBXGroup;
 			children = (
+				C29FD792251A347700E4A047 /* Errors */,
+				C29FD791251A343B00E4A047 /* Extensions */,
+				C29FD790251A33D900E4A047 /* Views */,
 				C2A323542501FA43009136E3 /* Publisher */,
 				C2562F3924FA56A00077C6D6 /* Assets.xcassets */,
-				C2562F4924FA68540077C6D6 /* CreateView.swift */,
-				C2562F4B24FA69610077C6D6 /* DropDownView.swift */,
 				C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */,
 				C2562F3524FA569E0077C6D6 /* IncrementApp.swift */,
 				C2562F3E24FA56A00077C6D6 /* Info.plist */,
-				C2562F3724FA569E0077C6D6 /* LandingView.swift */,
-				C2562F4D24FA6F5B0077C6D6 /* RemindView.swift */,
-				C2BC38AE24FF5FF800B4A8BF /* IncrementError.swift */,
 				C207600924FCF52C000FAC0B /* Models */,
 				C2562F3B24FA56A00077C6D6 /* Preview Content */,
 				C207600624FCBB41000FAC0B /* Service */,
-				C2562F4424FA60290077C6D6 /* Utils */,
 				C2562F4F24FA719C0077C6D6 /* ViewModels */,
-				C20F1BE52508BFBA00ED5142 /* TabContainerView.swift */,
-				C22DEC35250F2B2B0008DBF4 /* ChallengeListView.swift */,
 			);
 			path = Increment;
 			sourceTree = "<group>";
@@ -158,15 +153,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C2562F4424FA60290077C6D6 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				C2562F4524FA603E0077C6D6 /* PrimaryButtonStyle.swift */,
-				C2562F4724FA61F50077C6D6 /* Color+Extension.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		C2562F4F24FA719C0077C6D6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +162,36 @@
 				C2543C122514D48B001275C9 /* ChallengeItemViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C29FD790251A33D900E4A047 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2562F4524FA603E0077C6D6 /* PrimaryButtonStyle.swift */,
+				C2562F4924FA68540077C6D6 /* CreateView.swift */,
+				C2562F3724FA569E0077C6D6 /* LandingView.swift */,
+				C2562F4D24FA6F5B0077C6D6 /* RemindView.swift */,
+				C20F1BE52508BFBA00ED5142 /* TabContainerView.swift */,
+				C22DEC35250F2B2B0008DBF4 /* ChallengeListView.swift */,
+				C2562F4B24FA69610077C6D6 /* DropDownView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C29FD791251A343B00E4A047 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2562F4724FA61F50077C6D6 /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C29FD792251A347700E4A047 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				C2BC38AE24FF5FF800B4A8BF /* IncrementError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		C2A323542501FA43009136E3 /* Publisher */ = {
