@@ -28,6 +28,10 @@
 		C2562F5124FA71D20077C6D6 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F5024FA71D20077C6D6 /* CreateChallengeViewModel.swift */; };
 		C2562F5324FA76470077C6D6 /* DropDownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2562F5224FA76470077C6D6 /* DropDownItemProtocol.swift */; };
 		C2562F5524FA8E8F0077C6D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */; };
+		C27ECB52252ADE6800E4568C /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ECB51252ADE6800E4568C /* LandingViewModel.swift */; };
+		C27ECB54252AE1BD00E4568C /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ECB53252AE1BD00E4568C /* LoginSignupView.swift */; };
+		C27ECB56252AE54C00E4568C /* LoginSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ECB55252AE54C00E4568C /* LoginSignupViewModel.swift */; };
+		C27ECB59252AED0000E4568C /* TextFieldCustomRoundedStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ECB58252AECFF00E4568C /* TextFieldCustomRoundedStyle.swift */; };
 		C28732B725244040004F1F2C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28732B625244040004F1F2C /* SettingsView.swift */; };
 		C28732B925244137004F1F2C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28732B825244137004F1F2C /* SettingsViewModel.swift */; };
 		C28732BB2524415C004F1F2C /* SettingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28732BA2524415C004F1F2C /* SettingItemViewModel.swift */; };
@@ -61,6 +65,10 @@
 		C2562F5024FA71D20077C6D6 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		C2562F5224FA76470077C6D6 /* DropDownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownItemProtocol.swift; sourceTree = "<group>"; };
 		C2562F5424FA8E8F0077C6D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C27ECB51252ADE6800E4568C /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		C27ECB53252AE1BD00E4568C /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
+		C27ECB55252AE54C00E4568C /* LoginSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewModel.swift; sourceTree = "<group>"; };
+		C27ECB58252AECFF00E4568C /* TextFieldCustomRoundedStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustomRoundedStyle.swift; sourceTree = "<group>"; };
 		C28732B625244040004F1F2C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C28732B825244137004F1F2C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		C28732BA2524415C004F1F2C /* SettingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemViewModel.swift; sourceTree = "<group>"; };
@@ -135,6 +143,7 @@
 		C2562F3424FA569E0077C6D6 /* Increment */ = {
 			isa = PBXGroup;
 			children = (
+				C27ECB57252AECCE00E4568C /* Modifiers */,
 				C29FD792251A347700E4A047 /* Errors */,
 				C29FD791251A343B00E4A047 /* Extensions */,
 				C29FD790251A33D900E4A047 /* Views */,
@@ -168,8 +177,18 @@
 				C2543C122514D48B001275C9 /* ChallengeItemViewModel.swift */,
 				C28732B825244137004F1F2C /* SettingsViewModel.swift */,
 				C28732BA2524415C004F1F2C /* SettingItemViewModel.swift */,
+				C27ECB51252ADE6800E4568C /* LandingViewModel.swift */,
+				C27ECB55252AE54C00E4568C /* LoginSignupViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C27ECB57252AECCE00E4568C /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C27ECB58252AECFF00E4568C /* TextFieldCustomRoundedStyle.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		C29FD790251A33D900E4A047 /* Views */ = {
@@ -183,6 +202,7 @@
 				C22DEC35250F2B2B0008DBF4 /* ChallengeListView.swift */,
 				C2562F4B24FA69610077C6D6 /* DropDownView.swift */,
 				C28732B625244040004F1F2C /* SettingsView.swift */,
+				C27ECB53252AE1BD00E4568C /* LoginSignupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,18 +353,22 @@
 				C2562F4824FA61F50077C6D6 /* Color+Extension.swift in Sources */,
 				C28732B725244040004F1F2C /* SettingsView.swift in Sources */,
 				C207600B24FCF54F000FAC0B /* Challenge.swift in Sources */,
+				C27ECB56252AE54C00E4568C /* LoginSignupViewModel.swift in Sources */,
 				C2562F5124FA71D20077C6D6 /* CreateChallengeViewModel.swift in Sources */,
 				C2562F4E24FA6F5B0077C6D6 /* RemindView.swift in Sources */,
 				C207600824FCBB64000FAC0B /* UserService.swift in Sources */,
 				C20F1BE62508BFBA00ED5142 /* TabContainerView.swift in Sources */,
 				C22DEC38250F2B590008DBF4 /* ChallengeListViewModel.swift in Sources */,
+				C27ECB52252ADE6800E4568C /* LandingViewModel.swift in Sources */,
 				C28732BB2524415C004F1F2C /* SettingItemViewModel.swift in Sources */,
 				C22DEC3A250F2CA40008DBF4 /* QuerySnapshotPublisher.swift in Sources */,
 				C2562F4A24FA68540077C6D6 /* CreateView.swift in Sources */,
 				C207600D24FCF675000FAC0B /* ChallengeService.swift in Sources */,
 				C2543C132514D48B001275C9 /* ChallengeItemViewModel.swift in Sources */,
+				C27ECB54252AE1BD00E4568C /* LoginSignupView.swift in Sources */,
 				C22DEC36250F2B2B0008DBF4 /* ChallengeListView.swift in Sources */,
 				C2562F5324FA76470077C6D6 /* DropDownItemProtocol.swift in Sources */,
+				C27ECB59252AED0000E4568C /* TextFieldCustomRoundedStyle.swift in Sources */,
 				C2562F4C24FA69610077C6D6 /* DropDownView.swift in Sources */,
 				C2BC38AF24FF5FF800B4A8BF /* IncrementError.swift in Sources */,
 				C28732B925244137004F1F2C /* SettingsViewModel.swift in Sources */,
