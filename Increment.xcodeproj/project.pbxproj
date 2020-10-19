@@ -37,6 +37,8 @@
 		C28732BB2524415C004F1F2C /* SettingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28732BA2524415C004F1F2C /* SettingItemViewModel.swift */; };
 		C2A323562501FA67009136E3 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A323552501FA67009136E3 /* AuthPublisher.swift */; };
 		C2BC38AF24FF5FF800B4A8BF /* IncrementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BC38AE24FF5FF800B4A8BF /* IncrementError.swift */; };
+		C2C2DEAA253D4E4000DC31A2 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C2DEA9253D4E4000DC31A2 /* ProgressCircleView.swift */; };
+		C2C2DEAC253D500600DC31A2 /* ProgressCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C2DEAB253D500600DC31A2 /* ProgressCircleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		C28732BA2524415C004F1F2C /* SettingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemViewModel.swift; sourceTree = "<group>"; };
 		C2A323552501FA67009136E3 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
 		C2BC38AE24FF5FF800B4A8BF /* IncrementError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementError.swift; sourceTree = "<group>"; };
+		C2C2DEA9253D4E4000DC31A2 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		C2C2DEAB253D500600DC31A2 /* ProgressCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 				C28732BA2524415C004F1F2C /* SettingItemViewModel.swift */,
 				C27ECB51252ADE6800E4568C /* LandingViewModel.swift */,
 				C27ECB55252AE54C00E4568C /* LoginSignupViewModel.swift */,
+				C2C2DEAB253D500600DC31A2 /* ProgressCircleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				C2562F4B24FA69610077C6D6 /* DropDownView.swift */,
 				C28732B625244040004F1F2C /* SettingsView.swift */,
 				C27ECB53252AE1BD00E4568C /* LoginSignupView.swift */,
+				C2C2DEA9253D4E4000DC31A2 /* ProgressCircleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,6 +374,8 @@
 				C27ECB54252AE1BD00E4568C /* LoginSignupView.swift in Sources */,
 				C22DEC36250F2B2B0008DBF4 /* ChallengeListView.swift in Sources */,
 				C2562F5324FA76470077C6D6 /* DropDownItemProtocol.swift in Sources */,
+				C2C2DEAA253D4E4000DC31A2 /* ProgressCircleView.swift in Sources */,
+				C2C2DEAC253D500600DC31A2 /* ProgressCircleViewModel.swift in Sources */,
 				C27ECB59252AED0000E4568C /* TextFieldCustomRoundedStyle.swift in Sources */,
 				C2562F4C24FA69610077C6D6 /* DropDownView.swift in Sources */,
 				C2BC38AF24FF5FF800B4A8BF /* IncrementError.swift in Sources */,
