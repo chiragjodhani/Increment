@@ -33,7 +33,7 @@ struct ChallengeListView: View {
         ScrollView {
             VStack {
                 LazyVGrid(columns: [.init(.flexible(), spacing: 20), .init(.flexible())], spacing: 20) {
-                    ForEach(self.viewModel.itemsViewModels, id: \.self) { viewmodel in
+                    ForEach(self.viewModel.itemsViewModels, id: \.id) { viewmodel in
                         ChallengeItemView(viewmodel)
                     }
                 }
@@ -51,42 +51,5 @@ struct ChallengeListView: View {
                                 }
         )
         .navigationTitle(viewModel.title)
-    }
-}
-
-struct ChallengeItemView: View {
-    private let viewModel: ChallengeItemViewModel
-    init(_ viewModel: ChallengeItemViewModel) {
-        self.viewModel = viewModel
-    }
-    
-    var titleRow: some View {
-        HStack {
-        Text(viewModel.title)
-            .font(.system(size: 24, weight: .bold))
-            Spacer()
-            Image(systemName: "trash")
-        }
-    }
-    
-    var dailyIncreaseRow: some View
-    {
-        HStack {
-            Text(viewModel.dailyIncreaseText)
-                .font(.system(size: 24, weight: .bold))
-            Spacer()
-        }
-    }
-    var body: some View {
-        HStack {
-            Spacer()
-            VStack {
-                titleRow
-                ProgressCircleView(viewModel: viewModel.progressCircleViewModel)
-                    .padding(.vertical, 25)
-                dailyIncreaseRow
-            }.padding(.vertical, 10)
-            Spacer()
-        }.background(Rectangle().fill(Color.primaryButton).cornerRadius(5))
     }
 }

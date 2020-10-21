@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
-struct ChallengeItemViewModel: Hashable {
+struct ChallengeItemViewModel: Identifiable {
     private let challenge: Challenge
+    
+    var id: String {
+        challenge.id!
+    }
     var title: String {
         challenge.exercise.capitalized
     }
@@ -39,7 +43,15 @@ struct ChallengeItemViewModel: Hashable {
     var dailyIncreaseText: String {
         "+\(challenge.increase) daily"
     }
-    init(_ challenge: Challenge) {
+    private let onDelete: (String) -> Void
+    init(_ challenge: Challenge, onDelete: @escaping (String) -> Void) {
         self.challenge = challenge
+        self.onDelete = onDelete
+    }
+    
+    func tappedDelete() {
+        if let id = challenge.id {
+            onDelete(id)
+        }
     }
 }
