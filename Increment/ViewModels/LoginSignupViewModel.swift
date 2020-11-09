@@ -4,8 +4,8 @@
 //
 //  Created by Chirag's on 05/10/20.
 //
-import SwiftUI
 import Combine
+import Foundation
 final class LoginSignupViewModel: ObservableObject {
     private let mode: Mode
     
@@ -14,13 +14,12 @@ final class LoginSignupViewModel: ObservableObject {
     private(set) var emailPlaceHolderText = "Email"
     private(set) var passwordPlaceHolderText = "Password"
     @Published var isValid = false
-    @Binding var isPushed: Bool
+    @Published var isPushed = true
     private var cancellables: [AnyCancellable] = []
     private let userService: UserServiceProtocol
-    init(mode : Mode, userService: UserServiceProtocol = UserService(), isPushed: Binding<Bool>) {
+    init(mode : Mode, userService: UserServiceProtocol = UserService()) {
         self.mode = mode
         self.userService = userService
-        self._isPushed = isPushed
         
         Publishers.CombineLatest($emailText, $passwordText).map { [weak self] email, password in
             return self?.isValidEmail(email) == true && self?.isValidPassword(password) == true
@@ -74,7 +73,6 @@ final class LoginSignupViewModel: ObservableObject {
                 case let .failure(error):
                     print(error.localizedDescription)
                 case .finished:
-                    print("Finished")
                     self?.isPushed = false
                 }
             } receiveValue: {(_) in}
